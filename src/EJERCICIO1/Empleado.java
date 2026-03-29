@@ -16,6 +16,9 @@ public class Empleado extends Persona {
 	public void setPuesto(String puesto) {
 		this.puesto = puesto;
 	}
-	
-
+    // Método toString
+    @Override
+    public String toString() {
+        return "Empleado [legajo=" + legajo + ", puesto=" + puesto + ", " + super.toString() + "]";
+    }
 }
