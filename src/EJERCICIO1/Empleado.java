@@ -2,21 +2,11 @@ package EJERCICIO1;
 
 public class Empleado extends Persona 
 {
-	
 	// Atributos
-	
 	
 	private final int legajo;
 	private String puesto;
 	private static int contador=999;
-	
-	
-	// metodos
-	
-	public static int devolverProximoLegajo()
-	{
-		return contador+1;
-	}
 	
 	
 	// constructores
@@ -28,16 +18,20 @@ public class Empleado extends Persona
 		this.legajo = contador;
 	}
 	
-	
-	
 	// Getters y setters
-
 	
 	public int getLegajo() 
 	{
 		return legajo;
 	}
 	
+	/* Eliminado
+
+    public void setLegajo(int legajo) 
+    {
+        this.legajo = legajo;
+    }
+	*/
 	
 	public String getPuesto() 
 	{
