@@ -14,6 +14,7 @@ public class Persona
     private String direccion;
     private String telefono;
     private String email;
+    
    //Constructor vacío 
    public Persona() 
    { 
@@ -37,13 +38,6 @@ public class Persona
 	 
    }
    
-    //Constructor vacío 
-    public Persona() 
-    { 
-    this.nombre = "sin nombre";
-    this.fechaNacimiento =(2025, 1, 1); 
-    }
-    
     // Get y Set
     
 	public String getDni() 

@@ -13,9 +13,12 @@ public class Empleado extends Persona
 	
 	public Empleado()
 	{
+		super();
+		
 		contador++;
 		
 		this.legajo = contador;
+
 	}
 	
 	// Getters y setters
