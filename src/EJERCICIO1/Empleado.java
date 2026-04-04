@@ -24,16 +24,17 @@ public class Empleado extends Persona
 	public Empleado(String dni, String nombre, String apellido, java.time.LocalDate fechaNacimiento,
             String genero, String direccion, String telefono, String email,
             String puesto)
-{
-super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
+    {
+     super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
 
-this.puesto = puesto;
+     this.puesto = puesto;
+
+     contador++;
+
+     this.legajo = contador;
 
 
-
-
-
-}
+     }
 	
 	// Getters y setters
 	
