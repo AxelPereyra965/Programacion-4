@@ -68,4 +68,10 @@ public class Empleado extends Persona
     {
         return "Empleado [legajo=" + legajo + ", puesto=" + puesto + ", " + super.toString() + "]";
     }
+    
+    // método estático devolver proximo legajo
+    public static int devuelveProximoLegajo() 
+    {
+        return contador + 1;
+    }
 }
