@@ -6,21 +6,8 @@ public class Principal
 {
     public static void main(String[] args) 
     {
-
-        Empleado e1 = new Empleado(
-            "12345678", "Juan", "Perez",
-            LocalDate.of(1990, 5, 10),
-            "Masculino", "Calle 123", "1122334455", "juan@gmail.com",
-            "Programador"
-        );
-
-        Empleado e2 = new Empleado(
-            "23456789", "Ana", "Gomez",
-            LocalDate.of(1985, 8, 20),
-            "Femenino", "Calle 456", "1166778899", "ana@gmail.com",
-            "Analista"
-        );
-
+        Empleado e1 = new Empleado(); // empleados con el constructor vacío 
+        Empleado e2 = new Empleado(); // empleados con el constructor vacío 
         Empleado e3 = new Empleado(
             "34567890", "Luis", "Martinez",
             LocalDate.of(1992, 3, 15),
@@ -43,12 +30,16 @@ public class Principal
         );
 
         // Muestro los datos
-
+        System.out.println("Lista de Empleados:");
         System.out.println(e1);
         System.out.println(e2);
         System.out.println(e3);
         System.out.println(e4);
         System.out.println(e5);
+        System.out.println("-------------------");
+
+        // Próximo legajo
+        System.out.println("El próximo legajo será el " + Empleado.devuelveProximoLegajo());
 
     }
 }
